@@ -1,0 +1,15 @@
+$def with (greeting)
+
+<html>
+	<head>
+		<title>Marty's world</title>
+	</head>
+<body>
+
+$if greeting:
+	I just wanted to say <em style="color: blue; font-size: 3em;">$greeting</em>
+$else:
+	<em>Hello</em>, world!
+	
+</body>
+</html>
