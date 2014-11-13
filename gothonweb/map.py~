@@ -36,6 +36,8 @@ You're running down the central corridor to the Weapons Armory when
 a Gothon jumps out, red scaly skin, dark grimy teeth, and evil clown costume
 flowing around his hate filled body.  He's blocking the door to the
 Armory and about to pull a weapon to blast you.
+
+Do you: a) shoot!, b) dodge!, or c) tell a joke ?
 """)
 
 laser_weapon_armory = Room("Laser Weapon Armory",
@@ -53,7 +55,7 @@ You stand up and run to the far side of the room and find the
 neutron bomb in its container.  There's a keypad lock on the box
 and you need the code to get the bomb out.  If you get the code
 wrong 10 times then the lock closes forever and you can't
-get the bomb.  The code is 3 digits.
+get the bomb.  The code is 1 digit between 1 and 5. Type it in.
 """)
 
 the_bridge = Room("The Bridge", 
@@ -68,6 +70,8 @@ take control of the ship.  Each of them has an even uglier
 clown costume than the last.  They haven't pulled their
 weapons out yet, as they see the active bomb under your
 arm and don't want to set it off.
+
+Do you: a) throw the bomb, or b) slowly place the bomb ?
 """)
 
 
@@ -89,6 +93,8 @@ interference.  You get to the chamber with the escape pods, and
 now need to pick one to take.  Some of them could be damaged
 but you don't have time to look.  There's 5 pods, which one
 do you take?
+
+Type in the number for which pod you take:
 """)
 
 the_end_winner = Room("The End",
@@ -124,7 +130,7 @@ the_bridge.add_paths({
 })
 
 laser_weapon_armory.add_paths({
-	'0132': the_bridge,
+	'1': the_bridge,
 	'*': generic_death
 })
 
